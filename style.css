@@ -1,0 +1,142 @@
+
+:root{
+  --gold: rgba(244 204 91);
+  --blush: rgba(228 178 181);
+  --blue: rgba(130 206 239);
+  --grey: rgba(26 26 27);
+}
+mark.blush {
+    color:rgba(228 178 181);
+    background: none;
+}
+mark.cyan {
+    color: #48D1CC;
+    background: none;
+}
+mark.gold {
+    color: rgba(244 204 91);
+    background: none;
+}
+
+header{
+position: relative;
+text-align: center;
+font-family: "brandon-grotesque-n4","brandon-grotesque",sans-serif;
+font-size: 1.8rem;
+color: white;
+}
+header h1{
+  letter-spacing: 1rem;
+  line-height: 6rem;
+}
+nav ul {
+  list-style-type: none;
+  letter-spacing: 5px;
+}
+nav a {
+  display: block;
+  text-decoration: none;
+	color: var(--gold);
+	background: transparent;
+}
+nav a:hover{
+box-shadow: 0 0 10px var(--gold);
+}
+#img{
+border-style: solid;
+box-shadow: 0 0 10px black;
+}
+.aboutme {
+background-color: white;
+}
+.aboutme h2{
+  font-family: "brandon-grotesque", Helvetica, Arial, sans-serif;
+  color:var(--grey);
+      font-size: 3rem;
+      line-height: 1.3em;
+}
+.aboutme p{
+  color:silver;
+  font-family: Courier New; /*rasmusregular,Georgia,Times New Roman,Times,serif;*/
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+  #skills p{
+    font-family: Courier New; /*"brandon-grotesque", Helvetica, Arial,*/
+    font-size: 1.8rem;
+  }
+  #projects{
+    background: url(./images/flowers.jpg);
+  }
+  #projects h2{
+    font-family: "brandon-grotesque", Helvetica, Arial, sans-serif;
+      color: white;
+      padding-top: 3rem;
+      letter-spacing: 1rem;
+      text-align: center;
+      font-size: 3rem;
+      line-height: 1.3em;
+  }
+  #projects article {
+    color:white;
+    background: url(./images/flowers.jpg);
+    border: solid var(--grey);
+  }
+#projects h3{
+  font-style: rasmusregular,Georgia,Times New Roman,Times,serif;
+  font-size: 2rem;
+}
+#projects span {
+  font-style: rasmusregular,Georgia,Times New Roman,Times,serif;
+  font-size: 2rem;
+}
+#projects button {
+  font-style: rasmusregular,Georgia,Times New Roman,Times,serif;
+  align-items: center;
+  font-size: 2rem;
+  background: transparent;
+  border:none;
+}
+  #projects article:nth-child(2){
+    background: url(./images/pets.png) center center/cover;
+  }
+  #projects article:nth-child(3){
+    background: url(./images/pet-shelter.png) center center/cover;
+  }
+  #projects article:nth-child(4){
+    background: url(./images/travel.png) left center/cover;
+  }
+  .contact-links h2{
+    font-family: "brandon-grotesque", Helvetica, Arial, sans-serif;
+    padding-top: 3rem;
+      letter-spacing: 1rem;
+      text-align: center;
+      font-size: 3rem;
+      line-height: 1.3em;
+  }
+  .fa {
+  font-size: 40px;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  filter: grayscale(100%);
+}
+  .fa-linkedin {
+  background: #007bb5;
+  padding: 10px;
+
+  color: white;
+}
+.fa-google {
+  color:red;
+  padding: 10px;
+}
+
+.fa-github:hover{
+color: rgba(62 0 62);
+}
+
+.fa:hover{
+  filter: unset;
+}
