@@ -99,13 +99,13 @@ background-color: white;
   border:none;
 }
   #projects article:nth-child(2){
-    background: url(./images/pets.png) center center/cover;
+    background: url(./images/pets.PNG) center center/cover;
   }
   #projects article:nth-child(3){
-    background: url(./images/pet-shelter.png) center center/cover;
+    background: url(./images/pet-shelter.PNG) center center/cover;
   }
   #projects article:nth-child(4){
-    background: url(./images/travel.png) left center/cover;
+    background: url(./images/travel.PNG) left center/cover;
   }
   .contact-links h2{
     font-family: "brandon-grotesque", Helvetica, Arial, sans-serif;
