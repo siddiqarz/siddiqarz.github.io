@@ -51,7 +51,7 @@ background-color: white;
 }
 .aboutme h2{
   font-family: "brandon-grotesque", Helvetica, Arial, sans-serif;
-  color:var(--grey);
+  color:black;
       font-size: 3rem;
       line-height: 1.3em;
 }
@@ -66,10 +66,19 @@ background-color: white;
     font-family: Courier New; /*"brandon-grotesque", Helvetica, Arial,*/
     font-size: 1.8rem;
   }
+  .inner p{
+color:rgb(80, 76, 76);
+font-size: 1.6rem;
+line-height: 2rem;
+margin-left:2rem;
+  }
+  .inner h2{
+    font-size: 2rem;
+  }
   #projects{
     background: url(./images/flowers.jpg);
   }
-  #projects h2{
+   #projects h2{
     font-family: "brandon-grotesque", Helvetica, Arial, sans-serif;
       color: white;
       padding-top: 3rem;
@@ -140,3 +149,49 @@ color: rgba(62 0 62);
 .fa:hover{
   filter: unset;
 }
+#toggleNav {
+	background:none;
+	border:none;
+}
+.fa-bars {
+  color:gold;
+}
+#modal {
+  display: none;
+background-image: url(./images/headshot2.PNG>)
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0,0,0,0.5);
+}
+
+#modal.show {
+  display: flex;
+}
+
+#modal > div {
+  background: #fff;
+  border: 1px solid #000;
+  width: 350px;
+  height: 300px;
+  border-radius: 1em;
+
+  transition: 0.3s;
+}
+#modalText{
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    grid-column: 1 / span 2;
+    letter-spacing: 1rem;
+    text-align: center;
+    overflow-x: hidden;
+  
+}
+
