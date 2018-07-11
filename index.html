@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Siddiqa Abdullah</title>
 	
+	<script language="JavaScript" type="text/javascript" src="./jquery-3.3.1.min.js"></script>
 	<link rel="stylesheet" href="./style.css">
 	<link rel="stylesheet" href="./layout.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,11 +20,16 @@
 
 		<h1>Siddiqa Abdullah</h1>
 		<h2>Full-Stack Developer</h2>
-		<nav>
+		<nav id ="midNav">
+			<button id="toggleNav">
+				<i class="fa fa-bars"></i>
+			</button>
+			<div id="dropdown">
 			<ul>
 			<li><a href="#work">Work</a></li>
 			<li><a href="#me">About</a></li>
 			<li><a href="#contact">Contact</a></li>
+		</div>
 		</nav>
 	</header>
 	<div class="ContentContainer">
@@ -32,19 +38,48 @@
 			<section class ="aboutme">
 	
 				<h2 id="me"><mark class="blush">{</mark>About Me<mark class="blush">}</mark></h2>
-			<img id = img src ="./images/headshot2.PNG">
-			<p>A creative problem solver based in Ohio. Currently working on intensive projects from <mark class="blush">test driven design</mark> to implementation. Constantly expanding my knowledge, pushing boundaries and always in search of new challenges.</p>
+				<div class="flip">
+						<div class="card"> 
+						  <div class="face front"> 
+							<div class="inner">   
+							  <img id=headshot img src="./images/headshot2.PNG">
+							</div>
+						  </div> 
+						  <div class="face back"> 
+							<div class="inner text-center"> 
+									<h2><mark class="cyan">&lt</mark>Skills<mark class="cyan">&gt</mark></h2>
+									<p>Java <mark class="blush">HTLM5</mark> CSS3 <mark class="gold">Flexbox</mark> Javascript <mark class="blush">TDD</mark> Agile Methodology/Scrum Git/Github <mark class="cyan">Spring MVC</mark>
+									 </p>
+							</div>
+						  </div>
+						</div>	 
+				</div>
+				<!-- <img id = img src ="./images/headshot2.PNG"> -->
+<div>
+
+</section>
+<h1>About Me</h1>
+
+<button id="theButton">The Button</button>
+
+<div id="modal">
+  <div>
+		<p>A creative problem solver based in Ohio. Currently working on intensive projects from <mark class="blush">test driven design</mark> to implementation. Constantly expanding my knowledge, pushing boundaries and always in search of new challenges.</p>
+  </div>
+</div>
+
+ 
 			
-<div id = "skills">
+<!-- <div id = "skills">
 	<h2><mark class="cyan">&lt</mark>Skills<mark class="cyan">&gt</mark></h2>
 	<p>Java <mark class="blush">HTLM5</mark> CSS3 <mark class="gold">Flexbox</mark> Javascript <mark class="blush">TDD</mark> Agile Methodology/Scrum Git/Github <mark class="cyan">Spring MVC</mark>
 	 </p>
-</div>
+</div> -->
 	</section>
 <section>
 			<div id="projects">
 			<h2 id="work">Projects</h2>
-				<article>
+				<!-- <article>
 					<h3>Virtual Pets Amok</h3>
 					<span>Java</span>
 					<a href="https://github.com/siddiqarz/virtual-pets-amok" target="_blank"><button>Learn More</button></a>
@@ -62,6 +97,17 @@
 					<a href= "https://github.com/siddiqarz/Reviews-Site" target="_blank"><button>Learn More</button></a>
 				</article>
 			</div>
+<section> -->
+
+<section id="slider">
+			<div class="carousel">
+					<div class="prev"></div>
+					<div class="next"></div>
+					<div class="view"></div>
+					<div class="imgs"></div>
+				  </div>
+			</div>
+
 	</section>
 	</main>
 	<footer>
