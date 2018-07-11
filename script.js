@@ -25,9 +25,9 @@ function myFunction() {
   
   // Array of image URLs to display
   const slides = [
-    'pets.png',
-    'travel.png',
-    'pet-shelter.png',
+    { imgUrl: 'pets.png', gitHubUrl: 'VirtualPet' },
+    { imgUrl: 'travel.png', gitHubUrl: 'Travel' },
+    { imgUrl: 'pet-shelter.png', gitHubUrl: 'VirtualPetShelter' },
   ];
 
   // Index of currently displayed URL
@@ -44,12 +44,17 @@ function myFunction() {
   const view = document.querySelector('.carousel .view');
   const imgs = document.querySelector('.carousel .imgs');
 
+  view.addEventListener('click', function() {
+    const { gitHubUrl } = slides[currentIndex];
+    window.open('https://github.com/siddiqarz/'+gitHubUrl, '_blank');
+  });
+
   // Iterate through the image URLs, creating the preview
   // icons at the bottom of the carousel
   for (let i = 0; i < slides.length; i++) {
 
     // Create the <img> element
-    let imgUrl = slides[i];
+    let imgUrl = slides[i].imgUrl;
     const img = document.createElement('img');
     img.setAttribute('src', './images/' + imgUrl);
     imgs.appendChild(img);
@@ -77,7 +82,7 @@ function myFunction() {
   // Display slide in view based on value of currentIndex
   function showSlide() {
     view.innerHTML = '';
-    const imgUrl = slides[currentIndex];
+    const imgUrl = slides[currentIndex].imgUrl;
     const img = document.createElement('img');
     img.setAttribute('src', './images/' + imgUrl);
     view.appendChild(img);
