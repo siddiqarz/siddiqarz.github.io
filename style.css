@@ -39,7 +39,8 @@ nav ul {
 nav a {
   display: block;
   text-decoration: none;
-	color: var(--gold);
+  color: var(--gold);
+  font-size: 1em;
 	background: transparent;
 }
 nav a:hover{

@@ -71,7 +71,7 @@ header h1 {
 }
 #midNav.expanded ul {
     display: block;
-    border: 2px solid #ccc;
+  
 }
  #midNav.expanded li {
    display: block;
