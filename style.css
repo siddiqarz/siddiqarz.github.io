@@ -112,14 +112,15 @@ margin-left:2rem;
 .fa-linkedin {
   background: #007bb5;
   padding: 10px;
-  
   color: white;
 }
-.fa-google {
-  color:red;
-  padding: 10px;
-}
+.fa-envelope-o {
+padding: 10px;
 
+}
+.page-wrap button{
+ 
+}
 .fa-github:hover{
 color: rgba(62 0 62);
 }

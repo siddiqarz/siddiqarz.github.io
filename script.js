@@ -25,9 +25,9 @@ function myFunction() {
   
   // Array of image URLs to display
   const slides = [
-    { imgUrl: 'pets.png', gitHubUrl: 'virtual-pets-amok' },
+    { imgUrl: 'virtual-pet.png', gitHubUrl: 'virtual-pet' },
     { imgUrl: 'travel.png', gitHubUrl: 'reviews-site-full-stack' },
-    { imgUrl: 'pet-shelter.png', gitHubUrl: 'virtual-pet-shelter' },
+    { imgUrl: 'virtual-pets-amok.png', gitHubUrl: 'virtual-pets-amok' },
   ];
 
   // Index of currently displayed URL
