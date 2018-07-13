@@ -30,8 +30,11 @@ header h1{
   line-height: 6rem;
 }
 nav ul {
+  display: flex;
+  justify-content: center;
   list-style-type: none;
-  letter-spacing: 5px;
+  letter-spacing: 6px;
+  justify-content:space-around
 }
 nav a {
   display: block;
@@ -49,17 +52,21 @@ box-shadow: 0 0 10px black;
 .aboutme {
 background-color: white;
 }
-.aboutme h2{
+ #me{
   font-family: "brandon-grotesque", Helvetica, Arial, sans-serif;
   color:black;
       font-size: 3rem;
       line-height: 1.3em;
+      text-align: center;
 }
 .aboutme p{
   color:silver;
   font-family: Courier New; /*rasmusregular,Georgia,Times New Roman,Times,serif;*/
   font-size: 2rem;
   font-weight: 500;
+}
+#theButton{
+color: var--(gold);
 }
 
   #skills p{
@@ -78,7 +85,7 @@ margin-left:2rem;
   #projects{
     background: url(./images/flowers.jpg);
   }
-   #projects h2{
+   #work{
     font-family: "brandon-grotesque", Helvetica, Arial, sans-serif;
       color: white;
       padding-top: 3rem;
@@ -87,54 +94,25 @@ margin-left:2rem;
       font-size: 3rem;
       line-height: 1.3em;
   }
-  #projects article {
-    color:white;
-    background: url(./images/flowers.jpg);
-    border: solid var(--grey);
-  }
-#projects h3{
-  font-style: rasmusregular,Georgia,Times New Roman,Times,serif;
-  font-size: 2rem;
-}
-#projects span {
-  font-style: rasmusregular,Georgia,Times New Roman,Times,serif;
-  font-size: 2rem;
-}
-#projects button {
-  font-style: rasmusregular,Georgia,Times New Roman,Times,serif;
-  align-items: center;
-  font-size: 2rem;
-  background: transparent;
-  border:none;
-}
-  #projects article:nth-child(2){
-    background: url(./images/pets.PNG) center center/cover;
-  }
-  #projects article:nth-child(3){
-    background: url(./images/pet-shelter.PNG) center center/cover;
-  }
-  #projects article:nth-child(4){
-    background: url(./images/travel.PNG);
-  }
   .contact-links h2{
     font-family: "brandon-grotesque", Helvetica, Arial, sans-serif;
     padding-top: 3rem;
-      letter-spacing: 1rem;
-      text-align: center;
-      font-size: 3rem;
-      line-height: 1.3em;
+    letter-spacing: 1rem;
+    text-align: center;
+    font-size: 3rem;
+    line-height: 1.3em;
   }
   .fa {
-  font-size: 40px;
+    font-size: 40px;
   padding: 5px;
   text-align: center;
   text-decoration: none;
   filter: grayscale(100%);
 }
-  .fa-linkedin {
+.fa-linkedin {
   background: #007bb5;
   padding: 10px;
-
+  
   color: white;
 }
 .fa-google {
@@ -150,48 +128,41 @@ color: rgba(62 0 62);
   filter: unset;
 }
 #toggleNav {
-	background:none;
+  background:none;
 	border:none;
 }
 .fa-bars {
-  color:gold;
-}
-#modal {
-  display: none;
-background-image: url(./images/headshot2.PNG>)
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  background: rgba(0,0,0,0.5);
+  filter:unset;
+  color: var(--gold)
 }
 
-#modal.show {
-  display: flex;
+/* #projects article {
+  color:white;
+  background: url(./images/flowers.jpg);
+  border: solid var(--grey);
 }
-
-#modal > div {
-  background: #fff;
-  border: 1px solid #000;
-  width: 350px;
-  height: 300px;
-  border-radius: 1em;
-
-  transition: 0.3s;
+#projects h3{
+font-style: rasmusregular,Georgia,Times New Roman,Times,serif;
+font-size: 2rem;
 }
-#modalText{
-    margin-bottom: 2rem;
-    margin-top: 1rem;
-    grid-column: 1 / span 2;
-    letter-spacing: 1rem;
-    text-align: center;
-    overflow-x: hidden;
-  
+#projects span {
+font-style: rasmusregular,Georgia,Times New Roman,Times,serif;
+font-size: 2rem;
 }
+#projects button {
+font-style: rasmusregular,Georgia,Times New Roman,Times,serif;
+align-items: center;
+font-size: 2rem;
+background: transparent;
+border:none;
+}
+#projects article:nth-child(2){
+  background: url(./images/pets.PNG) center center/cover;
+}
+#projects article:nth-child(3){
+  background: url(./images/pet-shelter.PNG) center center/cover;
+}
+#projects article:nth-child(4){
+  background: url(./images/travel.PNG);
+} */
 

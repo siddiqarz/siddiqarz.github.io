@@ -25,9 +25,9 @@ function myFunction() {
   
   // Array of image URLs to display
   const slides = [
-    { imgUrl: 'pets.png', gitHubUrl: 'VirtualPet' },
-    { imgUrl: 'travel.png', gitHubUrl: 'Travel' },
-    { imgUrl: 'pet-shelter.png', gitHubUrl: 'VirtualPetShelter' },
+    { imgUrl: 'pets.png', gitHubUrl: 'virtual-pets-amok' },
+    { imgUrl: 'travel.png', gitHubUrl: 'reviews-site-full-stack' },
+    { imgUrl: 'pet-shelter.png', gitHubUrl: 'virtual-pet-shelter' },
   ];
 
   // Index of currently displayed URL
@@ -120,6 +120,11 @@ $('.flip').hover(function(){
   $(this).find('.card').toggleClass('flipped');
 
 });
+//Modal for about me section
+const theButton = document.getElementById('theButton');
+console.log(theButton);
+
+
 
 function showModal() {
   const modal = document.getElementById('modal');
@@ -138,3 +143,8 @@ function closeModal() {
   const modal = document.getElementById('modal');
   modal.classList.remove('show');
 }
+
+// showMessage();
+
+// theButton.addEventListener('click', showMessage);
+theButton.onclick = showModal;
