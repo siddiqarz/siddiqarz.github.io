@@ -51,7 +51,7 @@ header h1 {
   display: block;
 }
 @media screen and (max-width:700px){
-
+/*header and nav at reduced size*/
   header {
     white-space: normal;
     margin-bottom: 7rem;
@@ -97,9 +97,71 @@ nav a{
 .aboutme{
   min-height: 100vh;
 }
+
 .aboutme {
   display: grid;
   grid-column: (2, 1fr);
+}
+/*Tablet size*/
+  @media screen and (max-width:770px){
+    .aboutme{
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      margin-bottom: 7em;
+    }
+    
+  .flip {
+    margin-top:3em;
+  }
+  #projects{
+   padding-bottom: 5em;
+  }
+}
+@media screen and (max-width:600px){
+
+  /*skills section resize*/
+  .flip .card {
+    width: 70vw;
+    height: 50vh;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: 0.5s;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+  }
+  .flip .card .img {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    z-index: 1;
+  }
+  .inner{
+    margin:0px !important;
+    width: 14em;
+  }
+  /*modal resizing*/
+  #modal {
+    display: none; 
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    min-height:140vh;
+    background: rgba(0,0,0,0.5);
+  }
+  #modal > div {
+    background: #fff;
+    border: 1px solid #000;
+    width: 100vw;
+    height:700px;
+    border-radius: 4em;
+  
+    transition: 0.3s;
+  }
+  #container{
+    position: relative;
+    width:50%;
+  }
 }
 .aboutme h2{
   margin-bottom: 2rem;
@@ -127,8 +189,6 @@ nav a{
 .aboutme p{
   grid-area:2/2;
 }
-
-
 
 #slider {
   display: flex;
