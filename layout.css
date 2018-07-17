@@ -140,7 +140,7 @@ nav a{
     width: 14em;
   }
   /*modal resizing*/
-  #modal {
+  /* #modal {
     display: none; 
    position: absolute;
     top: 50%;
@@ -156,8 +156,8 @@ nav a{
     height:700px;
     border-radius: 4em;
   
-    transition: 0.3s;
-  }
+    transition: 0.3s; 
+  } */
   #container{
     position: relative;
     width:50%;
@@ -272,7 +272,7 @@ nav a{
 #container img{
   height: 80vh
 }
-#modal {
+/* #modal {
   display: none; 
  position: absolute;
   top: 50%;
@@ -280,8 +280,16 @@ nav a{
   transform: translate(-50%, -100%);
   min-height:100vh;
   background: rgba(0,0,0,0.5);
+} */
+#modal {
+  display: none; 
+ position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
 }
-
 #modal.show {
   display: grid;
 align-items:center;
