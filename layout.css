@@ -10,7 +10,7 @@
   overflow-y: scroll;
 }
 .ContentContainer{
-  position: relative;
+  /* position: relative; */
   display: block;
   z-index: 1;
 }
@@ -33,7 +33,6 @@ header h1 {
   background-repeat: no-repeat;
   margin-bottom: -80vh;
 }
-
 #toggleNav{
   display: none;
 }
@@ -51,11 +50,11 @@ header h1 {
   display: block;
 }
 @media screen and (max-width:700px){
-/*header and nav at reduced size*/
+ /*header and nav at reduced size*/
   header {
-    white-space: normal;
-    margin-bottom: 7rem;
-  }
+      white-space: normal;
+      margin-bottom: 7rem;
+ }
   #toggleNav {
       display: block;
       padding: 0.5rem;
@@ -63,18 +62,16 @@ header h1 {
       width: 100%;
       background: none;
       border: none;
-
       margin-top: -5rem;
  }
- #midNav ul {
-     display: none;
-}
-#midNav.expanded ul {
-    display: block;
-  
-}
- #midNav.expanded li {
-   display: block;
+  #midNav ul {
+      display: none;
+ }
+  #midNav.expanded ul {
+      display: block;
+ }
+  #midNav.expanded li {
+      display: block;
  }
   #midNav.expanded li a{
       display:block;
@@ -82,7 +79,7 @@ header h1 {
   #dropdown {
       width: 100%;
  }
- #midNav.expanded #dropdown {
+  #midNav.expanded #dropdown {
       position:absolute;
       top: 100%;
       right: 0;
@@ -97,71 +94,68 @@ nav a{
 .aboutme{
   min-height: 100vh;
 }
-
 .aboutme {
   display: grid;
   grid-column: (2, 1fr);
 }
 /*Tablet size*/
-  @media screen and (max-width:770px){
-    .aboutme{
+@media screen and (max-width:770px){
+  .aboutme{
       display: flex;
       flex-direction: column-reverse;
       justify-content: center;
       margin-bottom: 7em;
-    }
-    
+ }
   .flip {
-    margin-top:3em;
-  }
+      margin-top:3em;
+ }
   #projects{
-   padding-bottom: 5em;
-  }
+      padding-bottom: 5em;
+ }
 }
 @media screen and (max-width:600px){
-
-  /*skills section resize*/
+ /*skills section resize*/
   .flip .card {
-    width: 70vw;
-    height: 50vh;
-    -webkit-transform-style: preserve-3d;
-    -webkit-transition: 0.5s;
-    transform-style: preserve-3d;
-    transition: 0.5s;
-  }
+      width: 70vw;
+      height: 50vh;
+      -webkit-transform-style: preserve-3d;
+      -webkit-transition: 0.5s;
+      transform-style: preserve-3d;
+      transition: 0.5s;
+ }
   .flip .card .img {
-    position: relative;
-    width: 300px;
-    height: 200px;
-    z-index: 1;
-  }
+      position: relative;
+      width: 300px;
+      height: 200px;
+      z-index: 1;
+ }
   .inner{
-    margin:0px !important;
-    width: 14em;
-  }
-  /*modal resizing*/
-  #modal {
-    display: none; 
-   position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -100%);
-    min-height:140vh;
-    background: rgba(0,0,0,0.5);
-  }
+      margin:0px !important;
+      width: 14em;
+ }
+ /*modal resizing*/
+ /* #modal {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -100%);
+      min-height:140vh;
+      background: rgba(0,0,0,0.5);
+ }
   #modal > div {
-    background: #fff;
-    border: 1px solid #000;
-    width: 100vw;
-    height:700px;
-    border-radius: 4em;
-  
-    transition: 0.3s;
-  }
+      background: #fff;
+      border: 1px solid #000;
+      width: 100vw;
+      height:700px;
+      border-radius: 4em;
+      transition: 0.3s;
+ }
+  */
   #container{
-    position: relative;
-    width:50%;
-  }
+      position: relative;
+      width:50%;
+ }
 }
 .aboutme h2{
   margin-bottom: 2rem;
@@ -176,7 +170,6 @@ nav a{
   grid-area: 1/2/1/2;
   align-content: center;
 }
-
 .inner{
   grid-area: 1/1;
   margin-left: 2rem;
@@ -189,13 +182,11 @@ nav a{
 .aboutme p{
   grid-area:2/2;
 }
-
 #slider {
   display: flex;
   align-items:center;
   justify-content:center;
 }
-
 .flip {
   -webkit-perspective: 800;
   perspective: 800;
@@ -270,23 +261,21 @@ nav a{
   width:50%;
 }
 #container img{
-  height: 80vh
+  height: 80vh 
 }
 #modal {
-  display: none; 
- position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -100%);
-  min-height:100vh;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
   background: rgba(0,0,0,0.5);
 }
-
 #modal.show {
   display: grid;
-align-items:center;
+  align-items:center;
 }
-
 #modal p{
   margin-left: 0.9em;
   margin-top: 0.4em;
@@ -297,12 +286,10 @@ align-items:center;
   width: 100vw;
   height:300px;
   border-radius: 4em;
-
   transition: 0.3s;
 }
 #work{
   text-align: center;
- 
 }
 #slider{
   min-height: 100vh;
@@ -314,26 +301,25 @@ align-items:center;
   display: grid;
 }
 .carousel .prev {
-  /* row-start / col-start / row-end / col-end */
+ /* row-start / col-start / row-end / col-end */
   grid-area: 1 / 1 / 3 / 2;
-height: 80vh;
+  height: 80vh;
 }
 .carousel .next {
-  /* row-start / col-start / row-end / col-end */
+ /* row-start / col-start / row-end / col-end */
   grid-area: 1 / 3 / 3 / 4;
 }
 .carousel .view {
-  /* row-start / col-start / row-end / col-end */
+ /* row-start / col-start / row-end / col-end */
   grid-area: 1 / 2 / 1 / 2;
   display: flex;
   flex-direction: row;
-                                                               
   justify-content: center;
   overflow: hidden;
 }
 .carousel .view img {
-height:100%;
-width: 100%;
+  height:100%;
+  width: 100%;
 }
 .carousel .imgs {
  /* row-start / col-start / row-end / col-end */
@@ -356,7 +342,6 @@ width: 100%;
   grid-area:1/3;
 }
 .page-wrap{
-
 }
 .page-wrap p{
   text-align: center;
@@ -377,13 +362,11 @@ footer{
 }
 #contact{
   display: flex;
-justify-content: center;
+  justify-content: center;
   margin-top: 1em;
   text-align: center;
   align-items: center;
-
 }
-
 /* #skills{
   grid-column: 1 / span 2;
   text-align: center;
@@ -392,15 +375,18 @@ justify-content: center;
 }
 #skills h2 {
   margin-bottom: 10px;
-} */
+}
+*/
 /* .aboutme{
   padding-bottom: 7rem;
-} */
+}
+*/
 /* #img .aboutme{
   grid-area: 1/1;
   margin-left: 2rem;
-} */
-     /* #projects article {
+}
+*/
+/* #projects article {
   text-align: center;
   height: 15em;
   position: relative;
@@ -447,4 +433,5 @@ justify-content: center;
   outline:none;
   opacity: 1;
   bottom: 1em;
-} */
+}
+*/
