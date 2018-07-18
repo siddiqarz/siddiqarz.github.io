@@ -60,7 +60,7 @@ background-color: white;
       line-height: 1.3em;
       text-align: center;
 }
-.aboutme p{
+#modal p{
   color:silver;
   font-family: Courier New; /*rasmusregular,Georgia,Times New Roman,Times,serif;*/
   font-size: 2rem;
