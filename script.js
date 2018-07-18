@@ -131,7 +131,7 @@ function showModal() {
   modal.classList.add('show');
 
   modal.onclick = closeModal;
-
+body.style.overflow= "hidden";
   const modalContent = document.querySelector('#modal > div');
   modalContent.onclick = function(event) {
     console.log(event);

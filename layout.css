@@ -130,6 +130,30 @@ nav a{
       z-index: 1;
  }
   .inner{
+
+    margin:0px !important;
+    width: 14em;
+  }
+  /*modal resizing*/
+  /* #modal {
+    display: none; 
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    min-height:140vh;
+    background: rgba(0,0,0,0.5);
+  }
+  #modal > div {
+    background: #fff;
+    border: 1px solid #000;
+    width: 100vw;
+    height:700px;
+    border-radius: 4em;
+  
+    transition: 0.3s; 
+  } */
+
       margin:0px !important;
       width: 14em;
  }
@@ -152,6 +176,7 @@ nav a{
       transition: 0.3s;
  }
   */
+
   #container{
       position: relative;
       width:50%;
@@ -263,6 +288,15 @@ nav a{
 #container img{
   height: 80vh 
 }
+
+/* #modal {
+  display: none; 
+ position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  min-height:100vh;
+=======
 #modal {
   display: none;
   position: fixed;
@@ -270,6 +304,16 @@ nav a{
   left: 0;
   height: 100vh;
   width: 100vw;
+
+  background: rgba(0,0,0,0.5);
+} */
+#modal {
+  display: none; 
+ position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   background: rgba(0,0,0,0.5);
 }
 #modal.show {
